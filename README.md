@@ -114,4 +114,4 @@ After training and evaluating multiple models (Logistic Regression, SVM, Random 
 
 
 The XGBoost model achieved the highest balance between precision and recall, making it the most effective choice for predicting customer churn.
-[models_compare.png]
+![models_compare.png]
