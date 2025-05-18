@@ -94,13 +94,14 @@ Access the MLflow UI at [http://localhost:5000](http://localhost:5000) to view e
 ```
 .
 ├── dataset
-│   └── Churn_Modelling.csv
-├── your_script_name.py
-├── confusion_matrix_LR.png
-├── confusion_matrix_SVC.png
-├── confusion_matrix_RF.png
-├── confusion_matrix_GBOOST.png
-└── col_transform.txt
+│   └── Churn_Modelling.csv       
+├── src
+│   └── train.py                 
+├── confusion_matrix_LR.png       
+├── confusion_matrix_SVC.png      
+├── confusion_matrix_RF.png       
+├── confusion_matrix_GBOOST.png   
+└── col_transform.pkl             
 ```
 
 ---
