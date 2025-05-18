@@ -21,6 +21,7 @@ from sklearn.metrics import (
     confusion_matrix,
     ConfusionMatrixDisplay,
 )
+import pickle
 
 
 ### Import MLflow
@@ -113,8 +114,11 @@ def preprocess(df):
    
 
     # Log the transformer as an artifact
-    with open("col_transform.txt","w")as f:
-        f.write(str(col_transf))
+    with open("./transformer.pkl", "wb") as f:
+        pickle.dump(col_transf, f)
+
+    # Log it as an artifact to MLflow
+    mlflow.log_artifact("./transformer.pkl")
 
     return col_transf, X_train, X_test, y_train, y_test
 

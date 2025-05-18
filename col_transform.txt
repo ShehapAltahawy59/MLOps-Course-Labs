@@ -1,9 +1,0 @@
-ColumnTransformer(remainder='passthrough',
-                  transformers=[('standardscaler', StandardScaler(),
-                                 ['CreditScore', 'Age', 'Tenure', 'Balance',
-                                  'NumOfProducts', 'HasCrCard',
-                                  'IsActiveMember', 'EstimatedSalary']),
-                                ('onehotencoder',
-                                 OneHotEncoder(drop='first',
-                                               handle_unknown='ignore'),
-                                 ['Geography', 'Gender'])])

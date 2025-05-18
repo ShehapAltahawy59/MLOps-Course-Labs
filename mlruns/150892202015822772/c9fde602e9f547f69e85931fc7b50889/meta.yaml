@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/150892202015822772/c9fde602e9f547f69e85931fc7b50889/artifacts
+end_time: 1747598901986
+entry_point_name: ''
+experiment_id: '150892202015822772'
+lifecycle_stage: active
+run_id: c9fde602e9f547f69e85931fc7b50889
+run_name: Random Forest
+run_uuid: c9fde602e9f547f69e85931fc7b50889
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747598879069
+status: 3
+tags: []
+user_id: mosta
