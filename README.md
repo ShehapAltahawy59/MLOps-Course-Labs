@@ -1,7 +1,3 @@
-Sure! Here's a README file tailored for your bank churn prediction ML project using the provided code:
-
----
-
 # Bank Consumer Churn Prediction
 
 This project implements a machine learning pipeline to predict customer churn in a bank dataset. It includes data preprocessing, model training, evaluation, and experiment tracking using **MLflow**.

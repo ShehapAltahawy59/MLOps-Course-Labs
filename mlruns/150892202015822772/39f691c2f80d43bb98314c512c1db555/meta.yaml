@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/150892202015822772/39f691c2f80d43bb98314c512c1db555/artifacts
+deleted_time: 1747599836081
 end_time: 1747595707543
 entry_point_name: ''
 experiment_id: '150892202015822772'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 39f691c2f80d43bb98314c512c1db555
 run_name: GBOOST
 run_uuid: 39f691c2f80d43bb98314c512c1db555

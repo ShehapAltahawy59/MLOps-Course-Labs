@@ -1,8 +1,9 @@
 artifact_uri: mlflow-artifacts:/150892202015822772/269bdfa5362942b5bcd0286ff59a8128/artifacts
+deleted_time: 1747599836095
 end_time: 1747595667151
 entry_point_name: ''
 experiment_id: '150892202015822772'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 269bdfa5362942b5bcd0286ff59a8128
 run_name: Support Vector Machine
 run_uuid: 269bdfa5362942b5bcd0286ff59a8128
