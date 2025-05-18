@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/150892202015822772/541816177dff4e68afe39c880c2bc772/artifacts
+deleted_time: 1747582904264
+end_time: 1747580716532
+entry_point_name: ''
+experiment_id: '150892202015822772'
+lifecycle_stage: deleted
+run_id: 541816177dff4e68afe39c880c2bc772
+run_name: Support Vector Machine
+run_uuid: 541816177dff4e68afe39c880c2bc772
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747580705501
+status: 3
+tags: []
+user_id: mosta

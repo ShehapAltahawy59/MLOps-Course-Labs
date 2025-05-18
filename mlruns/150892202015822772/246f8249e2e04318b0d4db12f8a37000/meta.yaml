@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/150892202015822772/246f8249e2e04318b0d4db12f8a37000/artifacts
+deleted_time: 1747582904195
+end_time: 1747582169449
+entry_point_name: ''
+experiment_id: '150892202015822772'
+lifecycle_stage: deleted
+run_id: 246f8249e2e04318b0d4db12f8a37000
+run_name: all models
+run_uuid: 246f8249e2e04318b0d4db12f8a37000
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747582095589
+status: 4
+tags: []
+user_id: mosta

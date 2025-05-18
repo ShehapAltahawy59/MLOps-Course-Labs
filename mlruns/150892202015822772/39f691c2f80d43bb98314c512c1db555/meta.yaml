@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/150892202015822772/39f691c2f80d43bb98314c512c1db555/artifacts
+end_time: 1747595707543
+entry_point_name: ''
+experiment_id: '150892202015822772'
+lifecycle_stage: active
+run_id: 39f691c2f80d43bb98314c512c1db555
+run_name: GBOOST
+run_uuid: 39f691c2f80d43bb98314c512c1db555
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747595688024
+status: 3
+tags: []
+user_id: mosta

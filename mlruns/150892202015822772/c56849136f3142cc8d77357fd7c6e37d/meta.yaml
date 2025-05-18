@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/150892202015822772/c56849136f3142cc8d77357fd7c6e37d/artifacts
+deleted_time: 1747597112497
+end_time: 1747596006263
+entry_point_name: ''
+experiment_id: '150892202015822772'
+lifecycle_stage: deleted
+run_id: c56849136f3142cc8d77357fd7c6e37d
+run_name: Logistic Regression
+run_uuid: c56849136f3142cc8d77357fd7c6e37d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747595988639
+status: 4
+tags: []
+user_id: mosta

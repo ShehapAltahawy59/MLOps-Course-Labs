@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1747597300853
+current_stage: Deleted_Internal
+description: ''
+last_updated_timestamp: 1747597774133
+name: production
+run_id: 39f691c2f80d43bb98314c512c1db555
+run_link: ''
+source: mlflow-artifacts:/150892202015822772/39f691c2f80d43bb98314c512c1db555/artifacts/SVM
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/150892202015822772/39f691c2f80d43bb98314c512c1db555/artifacts/SVM
+user_id: null
+version: 1
