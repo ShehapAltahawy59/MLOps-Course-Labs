@@ -1,6 +1,6 @@
 import logging
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel,Field
 import joblib
 import pandas as pd
 
@@ -19,16 +19,16 @@ app = FastAPI()
 
 # Input data model - adjust fields to your actual dataset columns
 class ChurnModelInput(BaseModel):
-    CreditScore: int
-    Geography: str
-    Gender: str
-    Age: int
-    Tenure: int
-    Balance: float
-    NumOfProducts: int
-    HasCrCard: int
-    IsActiveMember: int
-    EstimatedSalary: float
+    CreditScore: int = Field(..., example=650)
+    Geography: str = Field(..., example="France")
+    Gender: str = Field(..., example="Female")
+    Age: int = Field(..., example=40)
+    Tenure: int = Field(..., example=5)
+    Balance: float = Field(..., example=50000.0)
+    NumOfProducts: int = Field(..., example=2)
+    HasCrCard: int = Field(..., example=1)
+    IsActiveMember: int = Field(..., example=1)
+    EstimatedSalary: float = Field(..., example=60000.0)
 
 # Load model and preprocessor once
 try:
@@ -72,5 +72,4 @@ def predict(data: ChurnModelInput):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
-
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

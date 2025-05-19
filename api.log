@@ -7,3 +7,24 @@
 2025-05-19 12:12:10,276 [ERROR] Failed to load model or preprocessor: Can't get attribute '__pyx_unpickle_CyHalfBinomialLoss' on <module 'sklearn._loss._loss' from 'C:\\Users\\mosta\\test_env\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
 2025-05-19 12:13:10,714 [ERROR] Failed to load model or preprocessor: Can't get attribute '__pyx_unpickle_CyHalfBinomialLoss' on <module 'sklearn._loss._loss' from 'C:\\Users\\mosta\\test_env\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
 2025-05-19 12:15:38,842 [ERROR] Failed to load model or preprocessor: Can't get attribute '__pyx_unpickle_CyHalfBinomialLoss' on <module 'sklearn._loss._loss' from 'C:\\Users\\mosta\\test_env\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-05-19 12:26:58,830 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:27:03,977 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:27:04,176 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:28:58,314 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:29:01,998 [INFO] Home endpoint called.
+2025-05-19 12:29:33,991 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:31:26,462 [INFO] Received prediction request: CreditScore=0 Geography='string' Gender='string' Age=0 Tenure=0 Balance=0.0 NumOfProducts=0 HasCrCard=0 IsActiveMember=0 EstimatedSalary=0.0
+2025-05-19 12:31:26,532 [INFO] Model prediction result: [1]
+2025-05-19 12:31:26,532 [INFO] Returning prediction: Churn
+2025-05-19 12:35:02,177 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:35:02,210 [INFO] Home endpoint called.
+2025-05-19 12:40:36,270 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:41:54,724 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:42:43,768 [INFO] Received prediction request: feature1=619 feature2='Female' feature3='France' feature4=42 feature5=2 feature6=70.5 feature7=1 feature8=0 feature9=3 feature10=101348.88
+2025-05-19 12:42:43,805 [ERROR] Prediction failed: columns are missing: {'NumOfProducts', 'Age', 'Geography', 'Gender', 'Tenure', 'Balance', 'IsActiveMember', 'HasCrCard', 'CreditScore', 'EstimatedSalary'}
+2025-05-19 12:43:34,715 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:45:13,946 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:45:25,964 [INFO] Received prediction request: CreditScore=650 Geography='France' Gender='Female' Age=40 Tenure=5 Balance=50000.0 NumOfProducts=2 HasCrCard=1 IsActiveMember=1 EstimatedSalary=60000.0
+2025-05-19 12:45:26,009 [INFO] Model prediction result: [0]
+2025-05-19 12:45:26,010 [INFO] Returning prediction: No Churn
+2025-05-20 01:48:39,357 [INFO] Model and preprocessor loaded successfully.
