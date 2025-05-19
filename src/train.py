@@ -22,7 +22,7 @@ from sklearn.metrics import (
     ConfusionMatrixDisplay,
 )
 import pickle
-
+import joblib
 
 ### Import MLflow
 import mlflow
@@ -203,6 +203,8 @@ def main():
 
         # Show the plot
         plt.show()
+        
+        joblib.dump(model, "./Models/LogisticRegression.pkl")
 
     ### Start a new run and leave all the main function code as part of the experiment
     with mlflow.start_run(run_name="Support Vector Machine"):
@@ -245,6 +247,7 @@ def main():
 
         # Show the plot
         plt.show()
+        joblib.dump(model, "./Models/svm.pkl")
 
     ### Start a new run and leave all the main function code as part of the experiment
     with mlflow.start_run(run_name="Random Forest"):
@@ -287,6 +290,7 @@ def main():
 
         # Show the plot
         plt.show()
+        joblib.dump(model, "./Models/RandomForest.pkl")
 
     ### Start a new run and leave all the main function code as part of the experiment
     with mlflow.start_run(run_name="GBOOST"):
@@ -329,6 +333,8 @@ def main():
 
         # Show the plot
         plt.show()
+        joblib.dump(model, "./Models/GBOOST.pkl")
+        
 
 
 
