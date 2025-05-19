@@ -1,0 +1,9 @@
+2025-05-19 12:07:54,655 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:07:58,400 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:10:04,999 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:10:31,105 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:11:04,169 [INFO] Model and preprocessor loaded successfully.
+2025-05-19 12:11:43,359 [ERROR] Failed to load model or preprocessor: Can't get attribute '__pyx_unpickle_CyHalfBinomialLoss' on <module 'sklearn._loss._loss' from 'C:\\Users\\mosta\\test_env\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-05-19 12:12:10,276 [ERROR] Failed to load model or preprocessor: Can't get attribute '__pyx_unpickle_CyHalfBinomialLoss' on <module 'sklearn._loss._loss' from 'C:\\Users\\mosta\\test_env\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-05-19 12:13:10,714 [ERROR] Failed to load model or preprocessor: Can't get attribute '__pyx_unpickle_CyHalfBinomialLoss' on <module 'sklearn._loss._loss' from 'C:\\Users\\mosta\\test_env\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
+2025-05-19 12:15:38,842 [ERROR] Failed to load model or preprocessor: Can't get attribute '__pyx_unpickle_CyHalfBinomialLoss' on <module 'sklearn._loss._loss' from 'C:\\Users\\mosta\\test_env\\Lib\\site-packages\\sklearn\\_loss\\_loss.cp312-win_amd64.pyd'>
