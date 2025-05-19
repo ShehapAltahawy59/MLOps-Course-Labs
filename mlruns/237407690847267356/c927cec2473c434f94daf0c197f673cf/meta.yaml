@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/237407690847267356/c927cec2473c434f94daf0c197f673cf/artifacts
+end_time: 1747646653690
+entry_point_name: ''
+experiment_id: '237407690847267356'
+lifecycle_stage: active
+run_id: c927cec2473c434f94daf0c197f673cf
+run_name: Support Vector Machine
+run_uuid: c927cec2473c434f94daf0c197f673cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747646642776
+status: 3
+tags: []
+user_id: mosta
