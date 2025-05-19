@@ -28,3 +28,7 @@
 2025-05-19 12:45:26,009 [INFO] Model prediction result: [0]
 2025-05-19 12:45:26,010 [INFO] Returning prediction: No Churn
 2025-05-20 01:48:39,357 [INFO] Model and preprocessor loaded successfully.
+2025-05-20 01:58:13,400 [INFO] Model and preprocessor loaded successfully.
+2025-05-20 01:58:22,835 [INFO] Received prediction request: CreditScore=650 Geography='France' Gender='Female' Age=40 Tenure=5 Balance=50000.0 NumOfProducts=2 HasCrCard=1 IsActiveMember=1 EstimatedSalary=60000.0
+2025-05-20 01:58:22,924 [INFO] Model prediction result: [0]
+2025-05-20 01:58:22,925 [INFO] Returning prediction: No Churn
