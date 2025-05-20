@@ -70,6 +70,6 @@ def predict(data: ChurnModelInput):
         logger.error(f"Prediction failed: {e}")
         raise HTTPException(status_code=500, detail="Prediction failed.")
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
