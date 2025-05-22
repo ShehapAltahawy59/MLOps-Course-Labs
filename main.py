@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel,Field
 import joblib
 import pandas as pd
-
+from prometheus_fastapi_instrumentator import Instrumentator
 # Setup logging
 logging.basicConfig(
     level=logging.INFO,
@@ -16,7 +16,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = FastAPI()
-
+Instrumentator().instrument(app).expose(app)
 # Input data model - adjust fields to your actual dataset columns
 class ChurnModelInput(BaseModel):
     CreditScore: int = Field(..., example=650)
