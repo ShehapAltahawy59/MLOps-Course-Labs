@@ -2,5 +2,10 @@ fastapi
 uvicorn 
 scikit-learn 
 pandas 
+numpy
 joblib
+pytest
+pytest-cov
+requests
+python-dotenv
 prometheus-fastapi-instrumentator
