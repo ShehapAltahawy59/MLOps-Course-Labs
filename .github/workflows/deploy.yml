@@ -8,9 +8,12 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  AWS_ACCOUNT_ID: "060795916912" 
+  AWS_ACCOUNT_ID: "060795916912"  # CHANGE THIS: Replace with your AWS Account ID
   ECR_REPOSITORY: churn-prediction
+  # CHANGE THIS: Replace with your name and last 3 digits of phone number
   IMAGE_TAG: shehab-659
+  # CHANGE THIS: Your unique project name (this prevents conflicts)
+  PROJECT_NAME: shehab-project
 
 jobs:
   test-and-deploy:
@@ -108,16 +111,16 @@ jobs:
             sed -i "/fastapi:/,/ports:/ s|image: .*|image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}|" docker-compose.yml
           fi
           
-          # Stop only containers from this project (not all containers on the system)
+          # Stop only YOUR containers using unique project name
           if [ -f docker-compose.yml ]; then
-            docker-compose down
+            docker-compose -p ${{ env.PROJECT_NAME }} down
           else
             echo "No docker-compose.yml found, skipping container stop"
           fi
           
-          # Pull the latest image and start containers
-          docker-compose pull
-          docker-compose up -d
+          # Pull the latest image and start containers with unique project name
+          docker-compose -p ${{ env.PROJECT_NAME }} pull
+          docker-compose -p ${{ env.PROJECT_NAME }} up -d
           
-          # Show running containers for this project
-          docker-compose ps
+          # Show running containers for your project only
+          docker-compose -p ${{ env.PROJECT_NAME }} ps
