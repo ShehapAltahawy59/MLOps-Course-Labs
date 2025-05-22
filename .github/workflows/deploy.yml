@@ -102,8 +102,11 @@ jobs:
           aws ecr get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com
           
           # Update docker-compose.yml to use ECR image
-          if [ -f docker-compose.yml ]; then
-            sed -i "s|image: .*api.*|image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}|g" docker-compose.yml
+           if [ -f docker-compose.yml ]; then
+            # Replace 'build: .' with the ECR image
+            sed -i "s|build: \.|image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}|g" docker-compose.yml
+            # Also handle if there's already an image line for fastapi service
+            sed -i "/fastapi:/,/ports:/ s|image: .*|image: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}|" docker-compose.yml
           fi
           
           # Stop existing containers
