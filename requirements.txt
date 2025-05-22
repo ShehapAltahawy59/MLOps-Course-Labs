@@ -8,4 +8,5 @@ pytest
 pytest-cov
 requests
 python-dotenv
+httpx
 prometheus-fastapi-instrumentator
