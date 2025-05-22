@@ -10,3 +10,6 @@ requests
 python-dotenv
 httpx
 prometheus-fastapi-instrumentator
+
+
+
